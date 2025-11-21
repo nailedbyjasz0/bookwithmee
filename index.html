@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nail Appointment Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #ff00aa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+
+    form {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      border: 2px solid #ff00aa;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #000;
+      color: #ff00aa;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #ff00aa;
+      color: #000;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .cashapp {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background: #ff00aa;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nail Appointment Booking</h1>
+
+  <form action="https://formspree.io/f/xyzoqlge" method="POST" enctype="multipart/form-data">
+
+    <label>Full Name:</label>
+    <input type="text" name="name" required />
+
+    <label>Phone Number:</label>
+    <input type="text" name="phone" required />
+
+    <label>Email Address (Required for approval message):</label>
+    <input type="email" name="email" required />
+
+    <label>Choose Nail Shape:</label>
+    <select name="shape" required>
+      <option value="Square">Square</option>
+      <option value="Stiletto">Stiletto</option>
+      <option value="Almond">Almond</option>
+    </select>
+
+    <label>Choose Nail Color(s):</label>
+    <select name="colors" multiple required>
+      <option value="Black">Black</option>
+      <option value="White">White</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+      <option value="Pink">Pink</option>
+      <option value="Purple">Purple</option>
+      <option value="Dirty Yellow">Dirty Yellow</option>
+    </select>
+    <small style="color:#ccc;">Hold CTRL (Windows) or CMD (Mac) to select more than one.</small>
+
+    <label>Add-ons:</label>
+    <input type="checkbox" name="addons[]" value="French Tips ($3)" /> French Tips ($3)<br>
+    <input type="checkbox" name="addons[]" value="Charms ($3)" /> Charms ($3)<br>
+    <input type="checkbox" name="addons[]" value="Red Bottom or Other Color ($3)" /> Red Bottom or Other Color ($3)<br>
+    <input type="checkbox" name="addons[]" value="3D Lines ($2)" /> 3D Lines ($2)<br>
+    <input type="checkbox" name="addons[]" value="Rhinestone French Tip ($3)" /> Rhinestone French Tip ($3)<br>
+    <input type="checkbox" name="addons[]" value="Rhinestone Full Cover ($7)" /> Rhinestone Full Cover ($7)<br>
+    <input type="checkbox" name="addons[]" value="Solid Color (Full Set) ($15)" /> Solid Color (Full Set) ($15)<br>
+    <input type="checkbox" name="addons[]" value="Nail Art ($7)" /> Nail Art ($7)<br>
+    <input type="checkbox" name="addons[]" value="Chrome ($2)" /> Chrome ($2)<br>
+
+    <label>Photo Reference (opt
